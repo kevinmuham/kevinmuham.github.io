@@ -1,49 +1,45 @@
 /* Define your root variables */
 :root {
-    --background-light: #333;
+    /* --background-light: #333;
     --color-light: #c5c5c5;
     --background-dark: #ffffff;
-    --color-dark: #333;
-    /* --background-light: #ffffff;
+    --color-dark: #333; */
+    --background-light: #ffffff;
     --color-light: #333;
     --background-dark: #333;
-    --color-dark: #c5c5c5; */
+    --color-dark: #c5c5c5;
+}
+
+body {
+    font-size: 11rem;
+    font-weight: bold;
 }
 
 /* Footer styles */
-footer {
+/* footer {
     padding: 20px;
     text-align: center;
-}
+} */
 
 /* Media queries for responsiveness */
 /* Laptop */
 @media screen and (max-width: 1024px) {
-    header h1 {
-        font-size: 10rem; /* Adjust font size for laptop */
+    h1 {
+        font-size: 11rem; /* Adjust font size for laptop */
     }
-    /* Add more specific styles for laptop if needed */
 }
 
 /* iPad */
 @media screen and (max-width: 768px) {
-    header h1 {
+    h1 {
         font-size: 7rem; /* Adjust font size for iPad */
     }
-    /* Add more specific styles for iPad if needed */
 }
 
 /* iPhone */
-/* No changes to your existing CSS */
-
-/* Media query for smaller screens such as iPhones */
-@media screen and (max-width: 767px) {
-    .profile .container .row [class^="col-"] {
-        flex-direction: column; /* Change flex direction to column */
-        padding-top: 2rem;
-    }
-    .bawah .card{
-        height: 35rem;
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 3rem; /* Adjust font size for iPhone */
     }
 }
 
