@@ -4,22 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="style.css" rel="stylesheet"/>
-    <title>kevinabila porto</title>
+    <link href="assets/css/style.css" rel="stylesheet"/>
+    <title>kevinabila site</title>
 </head>
-<body>
-    <main class="flex min-h-screen flex-col items-center justify-center px-4 py-8">
-        <div class="flex flex-col gap-6 xmax-w-screen-lg">
-            <h1>kevinabila</h1>
-            <div class="flex flex-col md:flex-row gap-6">
-                <div class="w-full md:w-[100%] border border-grey shadow-lg rounded-2xl p-5 flex items-center justify-center">
-                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@kevinmuham" data-unique-id="kevinmuham" data-embed-from="embed_page" data-embed-type="creator" style="max-width:780px; min-width:288px;"> <section> <a target="_blank" href="https://www.tiktok.com/@kevinmuham?refer=creator_embed">@kevinmuham</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
-                </div>
-                <div class="w-full md:w-[100%] border border-grey shadow-lg rounded-2xl p-5 flex items-center justify-center">
-                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@taffyanabila" data-unique-id="taffyanabila" data-embed-from="embed_page" data-embed-type="creator" style="max-width:780px; min-width:288px;"> <section> <a target="_blank" href="https://www.tiktok.com/@taffyanabila?refer=creator_embed">@taffyanabila</a> </section> </blockquote> <script async src="https://www.tiktok.com/embed.js"></script>
-                </div>
+<body class="h-screen flex items-center justify-center">
+    <div class="text-center">
+      <h1 class="text-3xl font-bold mb-6">Mau Kepoin Siapa Nih?</h1>
+      <div class="flex justify-center space-x-6 gap-6">
+        <!-- Kevin -->
+        <a href="pages/kevin.html" class="flex flex-col items-center cursor-pointer group">
+            <div class="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-2 border-transparent group-hover:border-black transition duration-300">
+            <img src="assets/img/kevin.JPG" alt="Account 1" class="w-full h-full object-cover">
             </div>
-        </div>
-    </main>
-</body>
+            <span class="mt-4 text-lg group-hover:underline">Kevin</span>
+        </a>
+        <!-- Nabila -->
+        <a href="pages/nabila.html" class="flex flex-col items-center cursor-pointer group">
+            <div class="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-2 border-transparent group-hover:border-black transition duration-300">
+            <img src="assets/img/nabila.jpg" alt="Account 2" class="w-full h-full object-cover">
+            </div>
+            <span class="mt-4 text-lg group-hover:underline">Nabila</span>
+        </a>
+      </div>
+    </div>
+  </body>
 </html>
