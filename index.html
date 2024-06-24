@@ -13,18 +13,6 @@
             background-position: center;
             transition: background-position 0.5s ease;
         }
-        .text-color {
-            background: linear-gradient(to right, #f3f4f6 50%, #111827 50%);
-            background-size: 350% 100%;
-            background-position: center;
-            color: transparent;
-            background-clip: text;
-            -webkit-background-clip: text;
-            transition: background-position 0.5s ease;
-        }
-        .text-color1 {
-            transition: background-position 0.5s ease;
-        }
         .kevin-hover {
             background-position: left center;
         }
@@ -49,21 +37,20 @@
 <body class="h-screen flex items-center justify-center body-bg">
     <div class="">
         <div class="text-center">
-            <h1 class="text-3xl font-bold mb-6 text-color">Mau Kepoin Siapa Nih?</h1>
-            <div class="flex justify-center space-x-6 gap-6">
+            <div class="flex justify-center space-x-6 gap-8 md:space-x-96 md:gap-72">
                 <!-- Kevin -->
                 <a href="pages/kevin.html" class="flex flex-col items-center cursor-pointer group bg-hover-kevin profile-link">
-                    <div class="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-2 border-transparent group-hover:border-black transition duration-300">
+                    <div class="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-2 border-transparent group-hover:border-white transition duration-300">
                         <img src="assets/img/kevin.jpg" alt="Account 1" class="w-full h-full object-cover">
                     </div>
-                    <!-- <span class="mt-4 text-lg text-color1">Kevin</span> -->
+                    <span class="mt-4 text-lg text-gray-100">Kevin</span>
                 </a>
                 <!-- Nabila -->
                 <a href="pages/nabila.html" class="flex flex-col items-center cursor-pointer group bg-hover-nabila profile-link">
                     <div class="w-36 h-36 md:w-48 md:h-48 rounded-full overflow-hidden border-2 border-transparent group-hover:border-black transition duration-300">
                         <img src="assets/img/nabila.jpg" alt="Account 2" class="w-full h-full object-cover">
                     </div>
-                    <!-- <span class="mt-4 text-lg text-color1">Nabila</span> -->
+                    <span class="mt-4 text-lg text-gray-900">Nabila</span>
                 </a>
             </div>
         </div>
@@ -78,15 +65,11 @@
                 event.preventDefault();
                 if (isMobile()) {
                     if (element.classList.contains('bg-hover-kevin')) {
-                        document.body.classList.add('kevin-hover');
-                        document.querySelector('.text-color').classList.add('kevin-hover');
-                        document.body.classList.remove('nabila-hover');
-                        document.querySelector('.text-color').classList.remove('nabila-hover');
+                        document.body.classList.add('kevin-hover');                        
+                        document.body.classList.remove('nabila-hover');                        
                     } else if (element.classList.contains('bg-hover-nabila')) {
-                        document.body.classList.add('nabila-hover');
-                        document.querySelector('.text-color').classList.add('nabila-hover');
-                        document.body.classList.remove('kevin-hover');
-                        document.querySelector('.text-color').classList.remove('kevin-hover');
+                        document.body.classList.add('nabila-hover');                        
+                        document.body.classList.remove('kevin-hover');                        
                     }
                 }
                 setTimeout(() => {
@@ -98,16 +81,13 @@
         document.querySelectorAll('.bg-hover-kevin').forEach(element => {
             element.addEventListener('mouseover', () => {
                 if (!isMobile()) {
-                    document.body.classList.add('kevin-hover');
-                    document.querySelector('.text-color').classList.add('kevin-hover');
-                    document.body.classList.remove('nabila-hover');
-                    document.querySelector('.text-color').classList.remove('nabila-hover');
+                    document.body.classList.add('kevin-hover');                    
+                    document.body.classList.remove('nabila-hover');                    
                 }
             });
             element.addEventListener('mouseout', () => {
                 if (!isMobile()) {
-                    document.body.classList.remove('kevin-hover');
-                    document.querySelector('.text-color').classList.remove('kevin-hover');
+                    document.body.classList.remove('kevin-hover');                 
                 }
             });
         });
@@ -115,16 +95,13 @@
         document.querySelectorAll('.bg-hover-nabila').forEach(element => {
             element.addEventListener('mouseover', () => {
                 if (!isMobile()) {
-                    document.body.classList.add('nabila-hover');
-                    document.querySelector('.text-color').classList.add('nabila-hover');
-                    document.body.classList.remove('kevin-hover');
-                    document.querySelector('.text-color').classList.remove('kevin-hover');
+                    document.body.classList.add('nabila-hover');                    
+                    document.body.classList.remove('kevin-hover');                    
                 }
             });
             element.addEventListener('mouseout', () => {
                 if (!isMobile()) {
-                    document.body.classList.remove('nabila-hover');
-                    document.querySelector('.text-color').classList.remove('nabila-hover');
+                    document.body.classList.remove('nabila-hover');                    
                 }
             });
         });
